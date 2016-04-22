@@ -1,0 +1,272 @@
+/* タブレットサイズのみ */
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+.title-wrap > h2 {
+    right: 20px;
+    bottom: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.arrow-text {
+    height: 196px;
+    background-size: 440px 196px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.arrow-text > .arrow-text-title {
+    font-size: 20px;
+}
+
+.disp-tbl.arrow-text-wrap {
+    width: 730px;
+}
+
+.arrow-text-tbl,
+.arrow-text-tbl > div {
+    width: 280px;
+}
+ /*--ここから銀屋追記--*/
+.square-text {
+    height: 180px;
+    background-size: 550px 180px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.square-text > .square-text-title {
+    font-size: 24px;
+}
+
+
+.disp-tbl.square-text-wrap {
+    width: 730px;
+}
+
+.square-text-tbl,
+.square-text-tbl > div {
+    width: 640px;
+}
+/*--ここまで銀屋追記--*/
+
+.point-circle-inner {
+    width: 730px;
+}
+
+.point-circle {
+    width: 120px;
+    height: 120px;
+}
+
+}
+
+/* タブレットサイズ以上 */
+@media screen and (min-width: 768px){
+
+.title-wrap > h2 {
+    position: absolute;
+}
+
+.circle-wrap > li {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.circle {
+    font-size: 18px;
+}
+
+.circle-wrap > li:not(:first-child) {
+    margin-left: 20px;
+}
+
+.layout-tbl > .disp-tbl > span:first-child {
+    width: 150px;
+}
+
+.balloon-wrap {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.balloon-img {
+    width: 140px;
+    height: 140px;
+}
+
+.balloon-wrap .balloon-img img {
+    max-width: 140px;
+    max-height: 140px;
+}
+
+.balloon {
+    margin-left: 40px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.arrow-text > .arrow-text-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.arrow-text-tbl > div {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.arrow-text-tbl p {
+    font-size: 24px;
+}
+
+ /*--ここから銀屋追記--*/
+.square-text > .square-text-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.square-text-tbl > div {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.square-text-tbl p {
+    font-size: 24px;
+}
+ /*--ここまで銀屋追記--*/
+
+.jsc-slider .slick-prev,
+.jsc-slider .slick-next {
+    width: 41px;
+    height: 56px;
+    margin-top: -28px;
+}
+
+.jsc-slider .slick-prev {
+    right: -40px;
+}
+
+.jsc-slider .slick-next {
+    left: -40px;
+}
+
+.jsc-slider .slick-prev:before,
+.jsc-slider .slick-next:before {
+    width: 41px;
+    height: 56px;
+}
+
+.link-btn-top {
+    right: 40px;
+    bottom: 40px;
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    background-size: 61px 56px;
+}
+
+.content {
+    background-attachment: fixed;
+}
+
+.header {
+    text-align: left;
+}
+
+.header > div {
+    position: relative;
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header ul {
+    margin-top: 10px;
+}
+
+.header ul li {
+    display: inline-block;
+}
+
+.header ul li:not(:first-child) {
+    padding-left: 6px;
+}
+
+.header ul li:not(:last-child) {
+    padding-right: 6px;
+}
+
+.header a {
+    color: #ffffff;
+}
+
+.link-kurumi {
+    position: absolute;
+    width: 166px;
+    height: 77px;
+    top: 0px;
+    right: 10px;
+    background-image: url(../img/logo.png);
+    background-size: 166px 77px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.link-kurumi > span {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.link-kurumi-sp {
+    display: none;
+}
+
+.point-circle-inner {
+    display: table;
+    margin: 0 auto;
+}
+
+.point-col {
+    width: 20%;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.point-circle {
+    display: table;
+    border-radius: 50%;
+    background-color: rgba(21, 189, 80, 0.7);
+    border: 2px solid #ffffff;
+    margin: 0 auto;
+}
+
+.point-circle > span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+}
+
+/* タブレットサイズ以下 */
+@media screen and (max-width: 991px){
+
+}

@@ -1,0 +1,24 @@
+<script src="js/form.js"></script>
+<div class="active-content">
+  <div class="col-sm-6">
+    <form role="form" action="send.php" method="post">
+      <input type="hidden" name="group" value="お問い合わせ">
+      件名<br />
+      <input type="text" name="title" class="form-control"><br />
+      お名前<span style="color:#FF0000">[必須]</span><br />
+      <input type="text" name="name" class="form-control indispensable"><br />
+      会社名(法人様のみ)<br />
+      <input type="text" name="companyname" class="form-control"><br />
+      電話番号<span style="color:#FF0000">[必須]</span><br />
+      <input type="tel" name="tel" class="form-control indispensable"><br />
+      メールアドレス<span style="color:#FF0000">[必須]</span><br />
+      <input type="email" name="email" class="form-control indispensable"><br />
+      お問い合わせ内容<span style="color:#FF0000">[必須]</span><br />
+      <textarea class="form-control indispensable" name="contentval" rows='5'></textarea><br />
+      <input type="submit" class="button bottom-setting" value="送信" />
+    </form>
+  </div>
+  <div class="col-sm-6 hidden-phone">
+     <img src="image/contact_img2.png" style="width:100%;" alt="女性画像">
+  </div>
+</div>

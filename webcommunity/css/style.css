@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@import "reset.css";
+@import "bootstrap.min.css";
+@import "slick.css";
+@import "layout.css";
+@import "tablet.css";
+@import "pc.css";
+@import "sp.css";
+
+body{ font-family: Arial, Helvetica, Verdana, "ƒqƒ‰ƒMƒmŠpƒSPro W3", "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif}
+
+h1 > span{
+      position: absolute;
+      top: -9999px;
+}
+
+.cb { color: #000000; };
+
+.tc { text-align: center; }
+.tr { text-align: right; }
+.tl { text-align: left; }
+
+.pt20 { padding-top: 20px; }
+.pt40 { padding-top: 40px; }
+.pt60 { padding-top: 60px; }
+.pl10 { padding-left: 10px; }
+
+.mt10 { margin-top: 10px; }
+.mt20 { margin-top: 20px; }
+.mt40 { margin-top: 40px; }
+.mt60 { margin-top: 60px; }
+
+.pb60 { padding-bottom: 60px; }
+
+.mb60 { margin-bottom: 60px; }
+
+.fnt-16 { font-size: 16px; }
+.fnt-18 { font-size: 18px; }
+
+.valign-m > * { vertical-align: middle; }
+
+.link {
+    color:#428bca;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color:#2a6496;
+    text-decoration: underline;
+}
+
+.disp-inl { display: inline-block; }
+
+.disp-tbl {
+    display: table;
+    width: 100%;
+}
+.disp-tbl > * {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.jsc-dn {
+    display: none;
+}

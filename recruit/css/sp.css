@@ -1,0 +1,165 @@
+@media screen and (max-width: 767px){
+
+.wrap {
+    margin-top: 61px;
+}
+
+.title-wrap > span {
+    display: block;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top: 2px solid #15bd50;
+    border-bottom: 2px solid #15bd50;
+}
+
+.circle-wrap > li {
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.circle-wrap > li:not(:first-child) {
+    margin-top: 20px;
+}
+
+.circle > span {
+    height: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.layout-tbl > .disp-tbl > span:first-child {
+    width: 110px;
+}
+
+.balloon-wrap {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.balloon-img {
+    width: 80px;
+    height: 80px;
+}
+
+.balloon-wrap .balloon-img img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.balloon {
+    margin-left: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.arrow-text {
+    height: 98px;
+    background-size: 220px 98px;
+}
+
+.disp-tbl.arrow-text-wrap {
+    width: 320px;
+}
+
+.arrow-text-tbl {
+    width: 160px;
+}
+
+.arrow-text-tbl > div {
+    padding-left: 6px;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    width: 160px;
+    font-size: 12px;
+}
+
+.jsc-slider .slick-prev,
+.jsc-slider .slick-next {
+    width: 40px;
+    height: 40px;
+    margin-top: -120px;
+}
+
+.jsc-slider .slick-prev {
+    right: 4px;
+}
+
+.jsc-slider .slick-next {
+    left: 4px;
+}
+
+.jsc-slider .slick-prev:before,
+.jsc-slider .slick-next:before {
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+
+.link-btn-top {
+    right: 14px;
+    bottom: 14px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-size: 24px 20px;
+}
+
+.header {
+    text-align: center;
+    font-size: 10px;
+}
+
+.header ul {
+    width: 100%;
+    display: table;
+}
+
+.header ul li {
+    display: table-cell;
+}
+
+.header ul li:not(:first-child) {
+    padding-left: 4px;
+}
+
+.header ul li:not(:last-child) {
+    padding-right: 4px;
+}
+
+.header ul li a {
+    width: 100%;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.header .link-kurumi {
+    display: none;
+}
+
+.header-logo img {
+    width: 80px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.link-kurumi-sp {
+    width: 166px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.link-kurumi-sp span {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    left: 0;
+}
+
+}

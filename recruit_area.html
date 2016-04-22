@@ -1,0 +1,119 @@
+<script>
+$(function(){
+  $('.button.form').on("click",function(){
+    $('body').addClass("loading");
+    var formaction = $(this).data('value');
+    var urlSetting = ('recruit_form.html');
+    $('#content').load(urlSetting,null,function(){
+      $('#disabledInput').attr("placeholder",formaction);
+      $('input[type=hidden]').val(formaction);
+      $('body').removeClass("loading");
+    });
+    return false;
+  });
+});
+</script>
+<div class="active-content form-area">
+  <div class="tabbable">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#tab1" data-toggle="tab">正社員</a></li>
+      <li><a href="#tab2" data-toggle="tab">アルバイト</a></li>
+    </ul>
+    <div id="my-tab-content" class="tab-content">
+      <div class="tab-pane active" id="tab1">
+        <div class="col-sm-6 plr-0 pt-10">
+          <table class="table table-bordered table-hover">
+            <tr>
+              <td>勤務形態</td>
+              <td>正社員</td>
+            </tr>
+            <tr>
+              <td>募集職種</td>
+              <td>■WEBコーダー<br />(HTML、CSS、JavaScript 2年以上の実務経験必須)<br />■WEBプログラマー<br />(PHP、Java、その他開発案件 2年以上の実務経験必須)<br />■WEBデザイナー<br />(Photoshop、Illustrator 2年以上の実務経験必須)<br /></td>
+            </tr>
+            <tr>
+              <td>給与</td>
+              <td>25万円～<br />※一部、試用期間がございます。</td>
+            </tr>
+            <tr>
+              <td>勤務時間</td>
+              <td>9:00～18:00</td>
+            </tr>
+            <tr>
+              <td>昇給</td>
+              <td>あり</td>
+            </tr>
+            <tr>
+              <td>待遇</td>
+              <td>残業手当・休日勤務手当・業務交通費</td>
+            </tr>
+            <tr>
+              <td>福利厚生</td>
+              <td>社会保険完備（健康保険・厚生年金）</td>
+            </tr>
+            <tr>
+              <td>勤務地</td>
+              <td>都内・首都圏近郊での勤務</td>
+            </tr>
+            <tr>
+              <td>応募方法</td>
+              <td>「応募はこちら」ボタンより応募フォームへお進みください。</td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-sm-6 hidden-phone recruit_img1">
+          <img src="image/recruit_img1.png" alt="女性画像">
+          <div>
+            <span class="button form" data-value="正社員">応募はこちら</span>
+          </div>
+        </div>
+        <div class="col-sm-6 hide-phone">
+          <span class="button form bottom-setting" data-value="正社員">応募はこちら</span>
+        </div>
+      </div>
+      <div class="tab-pane" id="tab2">
+        <div class="col-sm-6 plr-0 pt-10">
+          <table class="table table-bordered table-hover">
+          <tr>
+            <td>仕事内容</td>
+            <td>イベント(パーティー)のアシスタント<br />※誰でも簡単にできる作業です。</td>
+          </tr>
+          <tr>
+            <td>給与</td>
+            <td>歩合制<br />※副業可</td>
+          </tr>
+          <tr>
+            <td>勤務地</td>
+            <td>池袋を拠点に東京近郊<br />自宅で可能な作業もあります。</td>
+          </tr>
+          <tr>
+            <td>勤務時間</td>
+            <td>イベント内容により異なります。</td>
+          </tr>
+          <tr>
+            <td>待遇</td>
+            <td>交通費支給・研修あり・社員登用制度あり</td>
+          </tr>
+          <tr>
+            <td>応募資格</td>
+            <td>未経験歓迎・大学生歓迎・大学院生歓迎<br />※高校生不可</td>
+          </tr>
+          <tr>
+            <td>応募方法</td>
+            <td>「応募はこちら」ボタンより応募フォームへお進みください。</td>
+          </tr>
+        </table>
+        </div>
+        <div class="col-sm-6 hidden-phone recruit_img1">
+          <img src="image/recruit_img1.png" alt="女性画像">
+          <div>
+            <span class="button form" data-value="アルバイト">応募はこちら</span>
+          </div>
+        </div>
+        <div class="col-sm-6 hide-phone">
+          <span class="button form bottom-setting" data-value="アルバイト">応募はこちら</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

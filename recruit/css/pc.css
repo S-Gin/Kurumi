@@ -1,0 +1,33 @@
+@media screen and (min-width: 992px){
+
+.title-wrap > span {
+    right: 26%;
+    bottom: 30px;
+    font-size: 20px;
+    padding-left: 14px;
+    padding-top: 14px;
+    padding-right: 14px;
+    padding-bottom: 14px;
+}
+
+.arrow-text {
+    height: 245px;
+    background-size: 550px 245px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.arrow-text > .arrow-text-title {
+    font-size: 24px;
+}
+
+.disp-tbl.arrow-text-wrap {
+    width: 900px;
+}
+
+.arrow-text-tbl,
+.arrow-text-tbl > div {
+    width: 320px;
+}
+
+}

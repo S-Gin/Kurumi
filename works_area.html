@@ -1,0 +1,85 @@
+<script>
+$(function(){
+  rotatedeg = 360 / $('.circle-layout > div').length;
+  count = $('.circle-layout > div').length;
+  rotatedata = [];
+  for(var i = 0; i < count; i++){
+    rotatedata.push(rotatedeg * i);
+  }
+  rotate_change();
+
+  $('.circle-layout').on('click','.active',function(){
+    if($('body').hasClass("index") ){
+    } else {
+      var showcontent = $(this);
+      $("#circle-area").addClass('open');
+      $(".view-area").addClass("open");
+      if (showcontent.hasClass('jsc-ajax-link')) {
+        var url = locationurl + "content/" + showcontent.attr("id") +".html";
+        $('.view-area > .content').load(url);
+        $('.navbar.navbar-fixed-top').css("display","none");
+      } else {
+        var linkUrl = showcontent.attr('data-link-url');
+        location.href = linkUrl;
+      }
+    };
+  });
+  $('.view-area > span.view-area-close').on('click',function(){
+    $(".view-area").removeClass("open");
+    $(".view-area").one('oTransitionEnd mozTransitionEnd webkitTransitionEnd transitionend',
+      function(e) {
+        $("#circle-area").removeClass("open");
+        $('.navbar.navbar-fixed-top').css("display","block");
+      }
+    );
+  });
+});
+</script>
+<div id="circle-area">
+  <div class="view-area">
+    <span class="view-area-close" style="cursor:pointer;cursor:hand">Close</span>
+    <div class="content">
+    </div>
+  </div>
+  <div class="circle-layout">
+    <div class="active" id="content1" data-link-url="http://kurumi-inc.com/webproject/">
+      <div class="tc">
+        <img src="image/c9.jpg" style="width:100%;">
+      </div>
+    </div>
+    <div id="content2" class="jsc-ajax-link">
+      <div class="tc">
+        <img src="image/c2.jpg" style="width:100%;">
+      </div>
+    </div>
+    <div id="content3" class="jsc-ajax-link">
+      <div class="tc">
+        <img src="image/c3.jpg" style="width:100%;">
+      </div>
+    </div>
+    <div id="content4" data-link-url="http://kurumi-inc.com/recruit/">
+      <div class="tc">
+        <img src="image/c7.jpg" style="width:100%;">
+      </div>
+    </div>
+    <div id="content4" data-link-url="http://kurumi-inc.com/webcommunity/">
+      <div class="tc">
+        <img src="image/c4.jpg" style="width:100%;">
+      </div>
+    </div>
+<!--
+    <div id="content6">
+      <div class="tc">
+        <img src="image/c4.jpg" style="width:100%;">
+      </div>
+    </div>
+-->
+    <div id="content7" class="jsc-ajax-link">
+      <div class="tc">
+        <img src="image/c8.jpg" style="width:100%;">
+      </div>
+    </div>
+    <span class="left-circle-button" onclick="left_circle()"><span>&lt;</span></span>
+    <span class="right-circle-button" onclick="right_circle()"><span>&gt;</span></span>
+  </div>
+</div>

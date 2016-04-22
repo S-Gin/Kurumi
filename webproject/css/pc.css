@@ -1,0 +1,64 @@
+@media screen and (min-width: 992px){
+
+.title-wrap > h2 {
+    right: 26%;
+    bottom: 30px;
+    font-size: 20px;
+    padding-left: 14px;
+    padding-top: 14px;
+    padding-right: 14px;
+    padding-bottom: 14px;
+}
+
+.arrow-text {
+    height: 245px;
+    background-size: 550px 245px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.arrow-text > .arrow-text-title {
+    font-size: 24px;
+}
+
+.disp-tbl.arrow-text-wrap {
+    width: 900px;
+}
+
+.arrow-text-tbl,
+.arrow-text-tbl > div {
+    width: 320px;
+}
+
+/*--‚±‚±‚©‚ç‹â‰®’Ç‹L--*/
+.square-text {
+    height: 310px;
+    background-size: 550px 310px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.square-text > .square-text-title {
+    font-size: 24px;
+}
+
+.disp-tbl.square-text-wrap {
+    width: 900px;
+}
+
+.square-text-tbl,
+.square-text-tbl > div {
+    width: 640px;
+}
+/*--‚±‚±‚Ü‚Å‹â‰®’Ç‹L--*/
+
+.point-circle-inner {
+    width: 960px;
+}
+
+.point-circle {
+    width: 170px;
+    height: 170px;
+}
+
+}
